@@ -1,17 +1,14 @@
-﻿// Lab2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-
 #include <iostream>
 #include <windows.h>
 
 using namespace std;
 
-//нода
 struct Node {
     Node* next; // ссылка на следующий элемент
     int age; // возраст
     string name;
 
-    //конструктор ноды
+    //конструктор 
     Node(int age = int(), string name = string(), Node* next = nullptr) {
         this->age = age;
         this->name = name;
@@ -22,7 +19,7 @@ struct Node {
 //линейный список
 class LinearList {
 private:
-    Node* head; //голова списка
+    Node* head; 
 
 public:
     //кол-во элементов
